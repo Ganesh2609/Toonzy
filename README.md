@@ -1,69 +1,65 @@
 # Toonzy - Manga & Comics Website
 
-## Overview
-Toonzy is a responsive web application for reading manga and comics online. The platform offers a clean, intuitive interface for users to browse, search, and read comic content across various genres.
-
-## Live Demo
 [View Live Demo](https://ganesh2609.github.io/Toonzy/)
 
-## Features
-- **Responsive Design**: Fully responsive layout that works on mobile, tablet, and desktop screens
-- **User Profiles**: Personal profile page with user information and settings
-- **Comic Library**: Browse comics by genre, popularity, or recency
-- **Daily Updates**: Track comics that update on specific days of the week
-- **Reading Experience**: Smooth, vertical-scrolling reader for manga/comics
-- **Search Functionality**: Find comics by title, genre, or keyword
-- **Favorites System**: Save comics to a personal favorites list
+## Overview
 
-## File Structure
+Toonzy is a modern, responsive web application for reading manga and comics online. Built with vanilla JavaScript, HTML5, and CSS3, it offers a clean, intuitive interface for users to browse, search, and read comic content across various genres.
+
+## Key Features
+
+### 🎨 Reader Experience
+- **Vertical Scrolling Reader**: Smooth, continuous manga-style reading experience with PDF.js integration
+- **Responsive Design**: Optimized for all devices - mobile, tablet, and desktop
+- **Touch Gestures**: Double-tap to zoom, swipe navigation for mobile devices
+- **Chapter Navigation**: Seamless transition between chapters with keyboard shortcuts
+
+### 📚 Content Management
+- **Dynamic Library**: Browse comics by genres, daily updates, or trending content
+- **Search Functionality**: Find comics quickly by title, genre, or keywords
+- **Favorites System**: Save and organize your favorite comics
+- **User Profiles**: Personal profile page with reading history and preferences
+
+### 👨‍💻 Creator Dashboard
+- **Publishing Tools**: Upload and manage comic content
+- **Analytics**: Track reads, rankings, and user engagement
+- **Growth System**: Level up with achievements and unlock benefits
+- **Creator Guide**: Comprehensive help for content creators
+
+## Technical Architecture
+
+### Core Technologies
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **PDF Rendering**: PDF.js for high-quality comic viewing
+- **Styling**: Modern CSS with Flexbox and Grid layouts
+- **Font**: Poppins for clean, readable typography
+
+### Key JavaScript Components
+- `main.js`: Core application logic and navigation
+- `pdf-viewer.js`: Advanced manga reader with continuous scrolling
+- `mobile-menu.js`: Responsive mobile navigation implementation
+
+### Page Structure
 ```
-Toonzy/
-├── assets/
-│   ├── images/
-│   │   ├── icons/
-│   │   │   └── [icon SVG files]
-│   │   ├── chapter.jpg
-│   │   ├── dr_savior.jpg
-│   │   ├── dr_savior_2.jpg
-│   │   ├── logo.png
-│   │   ├── other_front.jpg
-│   │   └── profile.png
-├── css/
-│   ├── normalize.css
-│   └── style.css
-├── js/
-│   ├── main.js
-│   └── pdf-viewer.js
-├── comic-detail.html
-├── daily.html
-├── genres.html
-├── index.html
-├── profile.html
-├── reader.html
-└── README.md
+├── index.html          # Homepage with featured comics
+├── genres.html         # Browse by genres
+├── daily.html          # Daily updates
+├── comic-detail.html   # Individual comic information
+├── reader.html         # Manga/comic reading interface
+├── profile.html        # User profile management
+├── library.html        # Personal comic library
+└── publish.html        # Creator dashboard
 ```
 
-## Pages
-- **index.html**: Homepage with featured comics and latest updates
-- **genres.html**: Browse comics by genre categories
-- **daily.html**: View comics that update on specific days
-- **comic-detail.html**: Detailed information about a specific comic
-- **reader.html**: Manga/comic reading interface
-- **profile.html**: User profile page
+## Performance Optimizations
 
-## Technologies Used
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- PDF.js for the comic reader
+- **Lazy Loading**: Images load on-demand for better performance
+- **Responsive Images**: Different sizes served based on device
+- **CSS Optimization**: Minified stylesheets with efficient selectors
+- **JavaScript Bundling**: Modular code structure for maintainability
 
 ## Setup Instructions
 
-### Prerequisites
-- Any modern web browser (Chrome, Firefox, Safari, Edge)
-- Local web server (optional for local development)
-
-### Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/Ganesh2609/Toonzy.git
@@ -74,48 +70,6 @@ Toonzy/
    cd Toonzy
    ```
 
-3. Open `index.html` in your browser or serve with a local web server.
+3. Open `index.html` in your browser.
 
-### Development
-For active development, a simple way to run a local server:
-
-Using Python:
-```bash
-# Python 3
-python -m http.server
-
-# Python 2
-python -m SimpleHTTPServer
-```
-
-Using Node.js:
-```bash
-# Install http-server globally
-npm install -g http-server
-
-# Run the server
-http-server
-```
-
-## Browser Compatibility
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## Contributing
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin feature/my-new-feature`
-5. Submit a pull request
-
-## License
-© 2025 Toonzy. All rights reserved.
-
-## Contact
-For any inquiries, please contact [your-email@example.com]
-
----
-
-Created by Madhavan R
+4. Access the site at `http://localhost:8000`
